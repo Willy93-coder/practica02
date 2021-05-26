@@ -4,20 +4,66 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="stylesheet" href="main.css" />
+        <title>Práctica 2</title>
+        <link rel="stylesheet" href="./css/main.css" />
     </head>
     <body>
         <!-- HEADER -->
         <header>
-            <img src="" alt="" />
-            <nav class="menu"></nav>
         </header>
         <!-- MAIN -->
-        <main></main>
+        <main>
+            <section class="contenedor">
+                <h4 class="contenedor__titulo">Bienvenido</h4>
+                <h5 class="contenedor__subtitulo">Como si estuvieras en tu casa</h5>
+                <!-- imagen izquierda -->
+                <picture class="contenedor__izq">
+                    <source
+                    srcset="
+                      img/smartphone/trigo.jpg 1x,
+                      img/smartphone/trigo@2x.jpg 2x,
+                      img/smartphone/trigo@3x.jpg 3x
+                    "
+                    media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+                  />
+                  <!-- escritorio -->
+                  <source
+                    srcset="
+                      img/desktop/trigo.jpg    1x,
+                      img/desktop/trigo@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <!-- Imagen de respaldo -->
+                  <img class="contenedor__izq__banner1" src="" alt="hoja de trigo" />
+                </picture>
+                <!-- imagen derecha -->
+                <picture class="contenedor__der">
+                    <source
+                    srcset="
+                      img/smartphone/bowl_gachas.jpg 1x,
+                      img/smartphone/bowl_gachas@2x.jpg 2x,
+                      img/smartphone/bowl_gachas@3x.jpg 3x
+                    "
+                    media="(min-width:300px) and (max-width:450px) and (orientation: portrait)"
+                  />
+                  <!-- escritorio -->
+                  <source
+                    srcset="
+                      img/desktop/bowl_gachas.jpg    1x,
+                      img/desktop/bowl_gachas@2x.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <!-- Imagen de respaldo -->
+                  <img class="contenedor__der__banner2" src="" alt="bowl de gachas de avena con frutos rojos" />
+                </picture>
+                <p class="contenedor__explicacion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non praesent arcu tempus ac nisl integer tellus urna. </p>
+                <a class="contenedor__btn" href="#">Leer más...</a>
+            </section>
+        </main>
         <!-- FOOTER -->
         <footer>
-            <h6 class="copy">&copy;Copyright</h6>
         </footer>
     </body>
 </html>

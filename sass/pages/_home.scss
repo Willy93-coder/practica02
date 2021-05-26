@@ -1,2 +1,36 @@
 /* @HOME */
 /* ********** */
+body{
+    height: 100vh;
+    background: linear-gradient(
+        130deg, rgba(0, 102, 255, 0.5) 0%, 
+        rgba(158, 0, 255, 0.5) 50%, 
+        rgba(158, 0, 255, 0) 100%
+        );
+}
+@media only screen and (min-width: map-get($breakpoints, smartphone)) and (orientation: portrait) {
+    main{
+    border-radius: 30px;
+    background-color: map-get($colores, colorBgMain);
+    }
+}
+.contenedor {
+    &__titulo {
+        font-family: $fontFamilyBold;
+        font-size: $fontSizeBold;
+    }
+    &__subtitulo {
+    }
+    &__izq{
+        &__banner1{
+        }
+    }
+    &__der {
+        &__banner2{
+        }
+    }
+    &__explicacion {
+    }
+    &__btn {
+    }
+}

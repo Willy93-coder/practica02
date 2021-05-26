@@ -2,14 +2,16 @@
 /* ********** */
 
 // TIPOGRAFIA
-$fontSize: 16px;
-$fontFamily: "", sans-serif;
-$fontFamily-bold: "", sans-serif;
+$fontSize: 18px;
+$fontSizeBold: 24px;
+$fontFamily: "roboto", sans-serif;
+$fontFamilyBold: "roboto-bold", sans-serif;
 
 // COLORES
 $colores: (
-    negro: #3A3A3A,
-    blanco: #F5F5F5
+    colorBgMain: #939393,
+    colorLetra: #000000,
+    colorBtn: #FFF500
 );
 
 // TAMAÑOS

@@ -2,14 +2,14 @@
 /* ********** */
 
 // Botón standard <a>
-.btn{
-    padding: .9375rem;
-    font-size: 1.125rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    
-    &amarillo{
-        color: map-get($colores, negro);
-        background-color: map-get($colores, amarillo);
+.contenedor {
+    &__btn{
+        padding: 1rem;
+        font-family: $fontFamily;
+        font-size: $fontSize;
+        padding: 0.9375rem;
+        border-radius: 20px;
+        color: map-get($colores, colorLetra);
+        background-color: map-get($colores, colorBtn);
     }
 }
